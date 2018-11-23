@@ -10,6 +10,7 @@ class Swmm5Engine < Formula
   
   def install
     ENV.deparallelize
+    ENV.delete('CFLAGS')
     system "make"
   end
 
