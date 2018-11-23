@@ -9,7 +9,9 @@ class Swmm5Engine < Formula
   depends_on "libomp"
 
   def install
+    ENV.deparallelize
     system "make"
+    system "make install"
   end
 
 end
