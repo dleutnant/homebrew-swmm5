@@ -10,7 +10,7 @@ class Swmm5Engine < Formula
 
   def install
     ENV.deparallelize
-    system "make", "CFLAGS=-Ofast -Xpreprocessor -fopenmp"
+    system "make"
   end
 
 end
